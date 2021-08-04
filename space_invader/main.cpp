@@ -1,25 +1,66 @@
+#include <QWidget>
 #include <QApplication>
-#include <QGraphicsScene>
-#include <QImage>
-#include <QGraphicsView>
-#include <QLabel>
-#include <QMediaPlayer>
+#include "plusminus.h"
+#include "absolute.h"
+#include "vertical_box.h"
+#include "buttons.h"
+#include "nesting.h"
+#include "move.h"
+#include "timer.h"
+#include "ledit.h"
+#include "lines.h"
+
+int main(int argc, char* argv[]){
+    QApplication app(argc,argv);
+
+//    plusminus window;
+//    window.resize(300,190);
+//    window.setWindowTitle("Plus minus");
+//    window.show();
+
+//    Absolute window;
+
+//    window.setWindowTitle("Absolute");
+//    window.show();
+
+//    Vertical_box window;
+
+//    window.setWindowTitle("VerticalBox");
+//    window.show();
+
+//    Buttons window;
+
+//    window.setWindowTitle("Buttons");
+//    window.show();
+
+//    Nesting window;
+
+//    window.setWindowTitle("Nesting");
+//    window.show();
+
+//    Move window;
+
+//    window.resize(250, 150);
+//    window.setWindowTitle("Move");
+//    window.show();
+
+//    Timer window;
+
+//    window.resize(250, 150);
+//    window.setWindowTitle("Timer");
+//    window.show();
+
+//    Ledit window;
+
+//    window.setWindowTitle("QLineEdit");
+//    window.show();
+
+    Lines window;
+
+    window.resize(280, 400);
+    window.setWindowTitle("Lines");
+    window.show();
 
 
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-
-    QGraphicsScene *scene = new QGraphicsScene();
-    QImage *image = new QImage("./iamges/ship.png");
-    QLabel *label = new QLabel();
-    label -> show();
-
-    QMediaPlayer* wvplayer = new QMediaPlayer();
-    wvplayer->setMedia(QUrl::fromLocalFile("C:\\BCI2000.x64\\src\\custom\\AnnaRaymondStoryApp\\Audio\\Waking_Up_edited.wav"));
-    wvplayer->play();
-
-
-
-    return a.exec();
+    return app.exec();
 }

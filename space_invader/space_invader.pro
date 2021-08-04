@@ -9,10 +9,34 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp
+    absolute.cpp \
+    application.cpp \
+    buttons.cpp \
+    ledit.cpp \
+    lines.cpp \
+    main.cpp \
+    move.cpp \
+    nesting.cpp \
+    plusminus.cpp \
+    timer.cpp \
+    vertical_box.cpp \
+    widget.cpp
 
 HEADERS += \
-    Ship.h
+    Ship.h \
+    absolute.h \
+    application.h \
+    buttons.h \
+    cursors.h \
+    ledit.h \
+    lines.h \
+    move.h \
+    nesting.h \
+    plusminus.h \
+    pushbutton.h \
+    timer.h \
+    vertical_box.h \
+    widget.h
 
 TRANSLATIONS += \
     space_invader_zh_CN.ts
