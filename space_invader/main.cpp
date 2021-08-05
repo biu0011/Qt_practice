@@ -9,6 +9,8 @@
 #include "timer.h"
 #include "ledit.h"
 #include "lines.h"
+#include "application.h"
+#include "snake.h"
 
 int main(int argc, char* argv[]){
     QApplication app(argc,argv);
@@ -55,12 +57,22 @@ int main(int argc, char* argv[]){
 //    window.setWindowTitle("QLineEdit");
 //    window.show();
 
-    Lines window;
+//    Lines window;
 
-    window.resize(280, 400);
-    window.setWindowTitle("Lines");
-    window.show();
+//    window.resize(280, 400);
+//    window.setWindowTitle("Lines");
+//    window.show();
 
+//    Application window;
+
+//    window.resize(370, 200);
+//     window.setWindowTitle("The Burning widget");
+//     window.show();
+
+    Snake window;
+
+     window.setWindowTitle("Snake");
+     window.show();
 
     return app.exec();
 }

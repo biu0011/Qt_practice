@@ -18,6 +18,7 @@ SOURCES += \
     move.cpp \
     nesting.cpp \
     plusminus.cpp \
+    snake.cpp \
     timer.cpp \
     vertical_box.cpp \
     widget.cpp
@@ -34,6 +35,7 @@ HEADERS += \
     nesting.h \
     plusminus.h \
     pushbutton.h \
+    snake.h \
     timer.h \
     vertical_box.h \
     widget.h
